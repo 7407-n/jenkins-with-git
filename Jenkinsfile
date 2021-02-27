@@ -1,6 +1,11 @@
 node {
-   stage("One"){
-      sleep 5
-      echo 'hello'
+   stage("Git Pull"){
+      echo 'Git Pull'
+   },
+   stage("Build"){
+      echo 'Build'
+   }
+   stage("Notification"){
+      echo 'Notification'
    }
 }
