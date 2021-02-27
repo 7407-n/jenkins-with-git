@@ -1,8 +1,6 @@
-node("myAgent") {
-    timeout(unit: 'SECONDS', time: 5) {
-        stage("One"){
-            sleep 10
-            echo 'hello'
-        }
-    }
+node {
+   stage("One"){
+      sleep 5
+      echo 'hello'
+   }
 }
