@@ -1,6 +1,6 @@
 node {
    stage("Git Pull"){
-      echo 'Git Pull'
+      sh 'echo Building ${BRANCH_NAME}...'
    }
    stage("Build"){
       echo 'Build'
